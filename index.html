@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+        <!-- font Awesome -->
+        <script src="https://kit.fontawesome.com/ad18160eab.js" crossorigin="anonymous"></script>
+
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+    </head>
+    <link rel="stylesheet" href="style.css" />
+    <body>
+        <div class="app">
+            <h4 class="mb-3">Todo App</h4>
+            <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+                <span>Add New Tasks</span>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <h5 class="text-center fs-5 my-3">Tasks</h5>
+            <div id="tasks">
+                
+                
+            </div>
+        </div>
+
+        <!-- Add task here -->
+        <!-- Button trigger modal -->
+      
+
+        <!-- Modal -->
+        <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Tasks Here</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="textInput">Task Title</label>
+                        <input class="form-control " type="text" id="textInput">
+                        <div id="msg"></div>
+                        
+                        <label class="pt-1" for="dateInput">Date</label>
+                        <input class="form-control" type="date" name="" id="dateInput">
+                        
+                        <label class="pt-2" for="description">Desription</label>
+                        <textarea class="form-control" name="" id="description" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" id="add" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+    ></script>
+    
+    <script src="./main.js"></script>
+</html>
